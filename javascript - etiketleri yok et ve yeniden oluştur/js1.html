@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Hello</p>
+    <p>world</p>
+    <p>Code</p>
+
+    <button onclick="tikla()">tikla </button> 
+    
+
+    <script>
+        var px = document.querySelectorAll("p")
+        function tikla(){
+            for(var i = 0; i<=px.length;i++){
+                
+                if(px[i].style.display =="none"){
+                px[i].style.display = "block"
+            }  
+             else
+            {
+                px[i].style.display = "none"
+            }
+        } 
+    }
+
+    </script>
+</body>
+</html>
